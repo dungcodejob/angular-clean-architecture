@@ -1,0 +1,25 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "rootDir": ".",
+    "sourceMap": true,
+    "declaration": false,
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "target": "es2015",
+    "module": "esnext",
+    "lib": ["es2020", "dom"],
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true,
+    "baseUrl": ".",
+    "paths": {
+      "@clean-architecture/base": ["libs/data/base/src/index.ts"],
+      "@clean-architecture/entities": ["libs/domain/entities/src/index.ts"],
+      "@clean-architecture/interfaces": ["libs/domain/interfaces/src/index.ts"],
+      "@clean-architecture/repository": ["libs/data/repository/src/index.ts"]
+    }
+  },
+  "exclude": ["node_modules", "tmp"]
+}

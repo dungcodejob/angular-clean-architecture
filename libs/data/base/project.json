@@ -1,0 +1,21 @@
+{
+  "name": "base",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/data/base/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "build": {
+      "executor": "@nx/esbuild:esbuild",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/libs/data/base",
+        "main": "libs/data/base/src/index.ts",
+        "tsConfig": "libs/data/base/tsconfig.lib.json",
+        "assets": ["libs/data/base/*.md"],
+        "format": ["cjs"],
+        "generatePackageJson": true
+      }
+    }
+  }
+}
